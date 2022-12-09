@@ -1,0 +1,17 @@
+.tarification{
+    background-color: chocolate;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px;
+    border-color: blue;
+    margin: 3%;
+    text-align: center;
+}
+.gridContainer{
+    display: grid;
+  display: inline-grid;
+  grid-template-columns: 20% 20% 20% 20% ; 
+  grid-template-rows: 500px 500px 500px 500px;
+  padding-left:25%;
+  padding-right: 25%;
+
+}

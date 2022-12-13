@@ -1,0 +1,47 @@
+.tarification {
+  background-color: rgb(247, 248, 180);
+  font-family: 'Times New Roman', Times, serif;
+  font-size:x-large ;
+  border: 2px;
+  margin: 5%;
+  text-align: center;
+  text-decoration:solid;
+  padding-top: 50%;
+  size: 50%;
+  border-radius: 5%;
+  
+}
+
+.tarification:hover{
+  background-color:rgb(245, 234, 140) ;
+  size: 65%;
+  border-radius: 2%;
+  padding: 10%;
+  margin: 10%;
+}
+
+.gridContainer {
+  display: grid;
+  display: inline-grid;
+  grid-template-columns: 30% 30% 30% 30%;
+  grid-template-rows: 700px 700px 700px 700px;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 10%;
+}
+.button{
+
+  background-color: aliceblue;
+  margin-top: 100%;
+  font-size: 25px;
+
+}
+.button:hover{
+  background-color: #4CAF50; 
+  color: white;
+}
+#background{
+  background-image: url(https://ddl.rs/wp-content/uploads/2019/05/shutterstock_1372460225-min.jpg);
+background-size: contain;
+  background-repeat: no-repeat;
+}

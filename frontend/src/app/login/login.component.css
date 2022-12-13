@@ -1,0 +1,45 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    width: 26%;
+    height: 53%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://afrika-tout-simplement.com/mix/talk/27443-pcela-patuljke-mini-ranac-za-decu-i-deca-starosti-od-2-do-6-godina-estetskog-i-prakticne-ranac-sa-grudima.jpg);
+    box-shadow: 5px 4px 10px #b72c2c;
+    border-radius: 10%;
+}
+
+h1 {
+    color: white;
+    margin: auto;
+}
+
+input {
+    width: 75%;
+    margin: auto;
+    background-color: #dbbdbd;
+    padding: 2%;
+    border-radius: 25px;
+    border: 0;
+}
+
+input::placeholder {
+    color: #333030;
+}
+
+button {
+    width: 30%;
+    padding: 3%;
+    border-radius: 25px;
+    color: white;
+    background-color: #d47272;
+    border: 0;
+    margin: auto;
+    cursor: pointer;
+    
+}

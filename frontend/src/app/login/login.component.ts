@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
   username = 'tijana'
   password = 'tpass'
 
+
   model = new User(undefined, undefined)
   constructor() {
   }

@@ -1,32 +1,41 @@
-<div id="gridContainer1" >
+<div>
     <div class="body">
         <div class="forma">
-            <form id="register">
-                <br><label> Ime </label><br>
-                <input type="text" [(ngModel)]="model.ime" name="ime">
+            <div id="register">
+                 <br><label> Ime </label><br>
+                 <input type="text" [(ngModel)]="model.ime" name="ime">
 
-                <br> <label> Prezime </label><br>
-                <input type="text" [(ngModel)]="model.prezime" name="prezime">
+                 <br> <label> Prezime </label><br>
+                 <input type="text" [(ngModel)]="model.prezime" name="prezime">
 
-                <br> <label><b>Datum rodjenja</b></label><br>
-                <input type="date" [(ngModel)]="model.datumRodjenja" name="Datum">
+                 <br> <label><b>Datum rodjenja</b></label><br>
+                 <input type="date" [(ngModel)]="model.datumRodjenja" name="Datum">
 
-                <br> <label><b>Korisnicko Ime</b></label><br>
-                <input type="text" [(ngModel)]="model.korisnickoIme" name="Korsnik">
+                 <br><label>Pol</label><br>
+                 <div *ngFor="let pol of polovi">
+                    <input type="radio" name="pol" [(ngModel)]="model.pol" [value]="pol"> {{pol}}
+                 </div>
+                 <br> <label><b>Korisnicko Ime</b></label><br>
+                 <input type="text" [(ngModel)]="model.korisnickoIme" name="Korsnik">
 
-                <br> <label><b>E-mail </b></label><br>
-                <input type="email" [(ngModel)]="model.email" name="email">
+                 <br> <label><b>E-mail </b></label><br>
+                 <input type="email" [(ngModel)]="model.email" name="email">
 
-                <br> <label><b>Unesi lozinku</b></label><br>
-                <input type="password" [(ngModel)]="model.lozinka" name="lozinka">
+                 <br> <label><b>Unesi lozinku</b></label><br>
+                 <input type="password" [(ngModel)]="model.lozinka" name="lozinka">
 
-                <br> <label><b>Ponovi lozinku</b></label><br>
-                <input type="password" [(ngModel)]="model.lozinka2" name="lozinka2">
+                 <br> <label><b>Ponovi lozinku</b></label><br>
+                 <input type="password" [(ngModel)]="model.lozinka2" name="lozinka2">
 
-                <br><a routerLink="/login"> <input type="button" value="Registruj se" (click)="print()"></a>
-            </form>
+                 <div *ngFor="let cookie of model.cookies">
+                    <input type="checkbox" [(ngModel)]="cookie.selected"> {{cookie.name}}
+                 </div>
+
+
+                 <br><a routerLink="/login"> <input type="button" value="Registruj se" (click)="print()"></a>
+               
+            </div>
         </div>
-        <div>
+    <div>
 </div>
-                
-        {{model | json}}
+ {{model | json}}

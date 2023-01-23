@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Account } from '../model/account';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+ 
+  opcije= ['Musko', 'Zensko', 'Ostalo']
 
-  ngOnInit(): void {
+ 
+  model = {
+    name : '' , 
+    email : '' ,
+    number : '',
+    message : '' ,
+    opcije : '',
   }
 
+  constructor() { }
+  
+  ngOnInit(): void {
+  }
+ print() {
+    console.log(this.model) 
+}
 }

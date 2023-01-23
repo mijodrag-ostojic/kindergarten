@@ -1,45 +1,45 @@
 .textual {
-    background-color: rgb(245, 245, 245);
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 20%;
-    padding-top: 10%;
-    padding-right: 3%;
+  background-color: rgb(245, 245, 245);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20%;
+  padding-top: 10%;
+  padding-right: 3%;
 }
 
-#slikaJedan{
-    background-image: url("https://www.montrealfamilies.ca/wp-content/uploads/2021/08/Prepare-Kindergarten-1843x1080-1.jpg");
-    background-size: 100%;
-   
+#slikaJedan {
+  background-image: url("https://www.montrealfamilies.ca/wp-content/uploads/2021/08/Prepare-Kindergarten-1843x1080-1.jpg");
+  background-size: 100%;
+
 }
 
-#slikaDva{
+#slikaDva {
   background-image: url("https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/GettyImages-577674005_492115_zfpgiw.jpg");
   background-size: 100%;
- 
+
 }
 
 
 
-#slikaTri{
+#slikaTri {
   background-image: url("https://ychef.files.bbci.co.uk/976x549/p03gg1lc.jpg");
   background-size: 100%;
- 
+
 }
 
 
 #grid-container {
   display: grid;
   display: inline-grid;
-  grid-template-columns: 50% 50% ; 
-  grid-template-rows: 500px 500px ;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 500px 500px;
 
 }
-.paragrafTri{
+
+.paragrafTri {
   background-color: rgb(245, 245, 245);
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 30%;
   padding-top: 10%;
   padding-right: 3%;
-padding-bottom: 10%;
+  padding-bottom: 10%;
 }
-

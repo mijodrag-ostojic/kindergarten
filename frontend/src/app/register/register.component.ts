@@ -13,10 +13,29 @@ export class RegisterComponent implements OnInit {
     prezime : '',
     datumRodjenja : new Date,
     korisnickoIme : '',
+    pol: '',
     email : '',
     lozinka : '',
-    lozinka2 : '' 
+    lozinka2 : '',
+    cookies: [
+      { name: 'Item 1', selected: false },
+      { name: 'Item 2', selected: true },
+      { name: 'Item 3', selected: false },
+    ]
   }
+
+  polovi = [
+    'male' , 
+    'female',
+    'other',
+  ]
+
+  cookies = [
+    { name: 'Item 1', selected: false },
+    { name: 'Item 2', selected: true },
+    { name: 'Item 3', selected: false },
+  ]
+
 
   constructor() { }
 

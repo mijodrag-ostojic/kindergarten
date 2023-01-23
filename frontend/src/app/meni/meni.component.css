@@ -4,9 +4,21 @@ label {
 
 .spans{
     width: 40%;
+    padding-left:15%;
+    padding-bottom: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.spans2{
+    width: 60%;
     display:table-cell;
-    vertical-align:middle;
-    padding-left: 10%;
+    vertical-align:top;
+    padding-left: 18%;
+    padding-top: 7%;
 }
 
 #meni{
@@ -14,21 +26,17 @@ label {
     width: 100%;
     display:table;
 }
-#logo{
-    height: 100px;
-    width: 80%;
-}
 
 .button1{
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 20px 20px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
-    margin: 4px 2px;
+    font-size: 20px;
+    margin: 5px 3px;
     cursor: pointer;
 }
 
@@ -41,30 +49,40 @@ label {
     text-decoration: none;
     display: inline-block;
     font-size: 19px;
-    margin: 4px 2px;
+    margin: 3px 1px;
     cursor: pointer;
 }
 .button2{
-    background-color: rgba(255, 145, 0, 0.822) ;
-    border: none;
-    color: white;
-    font-family: 'Times New Roman', Times, serif; 
-    padding: 10px 10px;
-    text-align: center;
-    display:inline;
-    font-size: 15px;
-    margin:3px 1px ;
-    cursor: pointer;
- 
+    
+  width: 30%;
+  height: 50px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 3px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  position: relative;
+  z-index: 2;
 }
 .button2:hover {
-    background-color:white;
+     background-color: #093f0b;
     border: none;
-    color: rgba(255, 145, 0, 0.596);
-    padding: 10px 10px;
+    color:whitesmoke;
+    padding: 20px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     margin: 3px 1px;
     cursor:default;
+    
+
+
+   
+ 
+   
 }

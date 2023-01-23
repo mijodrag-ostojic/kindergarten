@@ -1,11 +1,12 @@
 
 <form class="container" >
     <h1>Login</h1>
-    <input autocomplete="off"  id="username" name="username">
-    <input autocomplete="off" id="password" type="password" placeholder="Password" name="password" ngModel>
+    <input autocomplete="off"  id="username" name="username" [(ngModel)]="model.username" name="username">
+    <input autocomplete="off" id="password" type="password" placeholder="Password" [(ngModel)]="model.password" name="password">
     <button  type="submit" href="/about-us">Log in</button>
 </form> 
 
+{{model | json}}
 
 {{username}}
 {{password}}

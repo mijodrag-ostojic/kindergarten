@@ -1,4 +1,4 @@
 export enum TipGrupe {
 
-    JUNIOR, JASLICE, PREDSKOLSKO
+  PREDSKOLSKO,OSNOVCI
 }

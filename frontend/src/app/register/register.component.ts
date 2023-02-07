@@ -1,50 +1,37 @@
-import { Component, OnInit } from '@angular/core';
-import { Account } from '../model/account';
+import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class RegisterComponent {
 
-  model : Account = {
-    ime : '',
-    prezime : '',
-    datumRodjenja : new Date,
-    korisnickoIme : '',
-    pol: '',
-    email : '',
-    lozinka : '',
-    lozinka2 : '',
-    cookies: [
-      { name: 'Item 1', selected: false },
-      { name: 'Item 2', selected: true },
-      { name: 'Item 3', selected: false },
-    ]
+  hide !: boolean
+
+  opcije = []
+
+
+  ime !: string
+
+  prezime !: string
+  korisnickoIme !: string
+  email !: string
+  datumRodjenja !: string
+
+
+
+  constructor(public router: Router) {
+    console.log('konstruktor');
   }
-
-  polovi = [
-    'male' , 
-    'female',
-    'other',
-  ]
-
-  cookies = [
-    { name: 'Item 1', selected: false },
-    { name: 'Item 2', selected: true },
-    { name: 'Item 3', selected: false },
-  ]
-
-
-  constructor() { }
 
   ngOnInit(): void {
+    console.log('init');
   }
 
-  print() {
-    console.log('Korisnik se registrovao!');
-    console.log(this.model);
-  }
+
+
 
 }

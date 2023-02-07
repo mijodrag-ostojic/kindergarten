@@ -12,4 +12,5 @@ export class FrontPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
 }

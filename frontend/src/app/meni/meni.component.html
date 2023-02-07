@@ -1,13 +1,50 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div id="meni">
-    <img src="https://iili.io/HaO6DXt.md.jpg" alt="HaO6DXt.md.jpg">
     <span class="spans">
-        <button class="button1" (click)="goToFrontPage()">Pocetna stranica </button>
-        <button class="button1" (click)="goToAboutUs()">Nesto o nama </button>
-        <button class="button1" (click)="goToContact()">Kontaktirajte nas </button>
-        <button class="button1" (click)="goToGrupe()" >Grupe</button>
+        <button class="button2" (click)="goToFrontPage()">Pocetna stranica </button>
+        <button class="button2" (click)="goToAboutUs()">Nesto o nama </button>
+        <button class="button2" (click)="goToContact()">Kontaktirajte nas </button>
     </span>
+
+    <img id="logo" src="https://i.ibb.co/YtMpMMX/dallas-5.jpg">
+
     <span class="spans2">
-        <button class="button2" (click)="goToLogin()">Uloguj Se </button>
-        <button class="button2" (click)="goToRegitration()">Registracija </button>
+
+        <div class="dropdown">
+            <button class="button" style="border-left:1px solid navy">
+                Grupe <i class="fa fa-caret-down"> </i>
+            </button>
+            <div class="dropdown-content">
+                <a href="za-skolarce.html">Za Školarce</a>
+                <a href="za-malce.html">Za Malce</a>
+                <a href="za-predskolce">Za Predškolce</a>
+            </div>
+        </div>
+
+        <button class="button2" (click)="goToGalerija()">Galerija</button>
+        <button class="button2" (click)="goToRadionice()">Radionica</button>
+        <button class="button2" (click)="goToIzleti()">Izleti</button>
     </span>
+</div>
+<!--
+       <button class="button2" (click)="goToZaSkolarce()">Za Školarce</button>
+        <button class="button2" (click)="goToZaMalce()">Za Malce</button>
+            <div class="dropdown">  <button class="button"  (click)="goToGrupe()">Za Predškolce</button> </div>
+ -->
+
+
+
+
+
+<div class="dropdown">
+    <button class="button" style="border-left:1px solid navy">
+
+        <div class="dropdown-content">
+            <a href="za-skolarce.html">Za Školarce</a>
+            <a href="za-malce.html">Za Malce</a>
+            <a href="za-predskolce">Za Predškolce</a>
+
+        </div>
+    </button>
 </div>

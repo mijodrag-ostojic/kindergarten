@@ -13,8 +13,8 @@ export class MeniComponent implements OnInit {
 
 
   osoba: Osoba | null = null;
-  constructor(public router: Router) { 
-    console.log('konstruktor'); 
+  constructor(public router: Router) {
+    console.log('konstruktor');
   }
 
   ngOnInit(): void {
@@ -22,25 +22,39 @@ export class MeniComponent implements OnInit {
   }
 
 
-
-  goToRegitration() {
-    this.router.navigate(['/register'])
-  }
-  
   goToLogin() {
     this.router.navigate(['/login'])
   }
 
-  goToAboutUs(){
+  goToAboutUs() {
     this.router.navigate(['/about-us'])
   }
-  goToFrontPage(){
+  goToFrontPage() {
     this.router.navigate(['/front-page'])
   }
-  goToContact(){
+  goToContact() {
     this.router.navigate(['/contact'])
   }
-  goToGrupe(){
+  goToGrupe() {
     this.router.navigate(['/grupe'])
   }
+  goToGalerija() {
+    this.router.navigate(['/galerija'])
+  }
+  goToIzleti() {
+    this.router.navigate(['/izleti'])
+  }
+  goToRadionice() {
+    this.router.navigate(['/radionice'])
+  }
+  goToZaMalce() {
+    this.router.navigate(['/za-malce'])
+  }
+  goToZaSkolarce() {
+    this.router.navigate(['/za-skolarce'])
+  }
+  goToZaPredskolarce() {
+    this.router.navigate(['/za-predskolce'])
+  }
+
 }

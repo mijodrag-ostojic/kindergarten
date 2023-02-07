@@ -2,87 +2,134 @@ label {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.spans{
-    width: 40%;
-    padding-left:15%;
+.spans {
+    width: 45%;
+padding-left: 2%;
     padding-bottom: 15%;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 23%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-.spans2{
-    width: 60%;
-    display:table-cell;
-    vertical-align:top;
-    padding-left: 18%;
-    padding-top: 7%;
+.spans2 {
+    width: 45%;
+    padding-left: 87%;
+    padding-bottom: 15%;
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-#meni{
+.spans3 {
+    width: 45%;
+    padding-left: 90%;
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#meni {
     height: 100px;
     width: 100%;
-    display:table;
+    display: table;
+
+
 }
 
-.button1{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
+.button {
+
+    width: 20%;
+    height: 40px;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
     text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 5px 3px;
-    cursor: pointer;
+    background-color: #f88706;
+    border: 3px solid rgb(63, 40, 148);
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    position: relative;
+    z-index: 2;
+    border-radius: 25px;
+
 }
 
-.button1:hover {
-    background-color: #093f0b;
-    border: none;
-    color: white;
-    padding: 20px 20px;
-    text-align: center;
+.button2 {
+
+    width: 20%;
+    height: 40px;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: sans-serif;
     text-decoration: none;
-    display: inline-block;
-    font-size: 19px;
-    margin: 3px 1px;
-    cursor: pointer;
+    background-color: #f88706;
+    border: 3px solid rgb(63, 40, 148);
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    position: relative;
+    z-index: 2;
+    border-radius: 25px;
+
 }
-.button2{
-    
-  width: 30%;
-  height: 50px;
-  line-height: 30px;
-  font-size: 20px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: #333;
-  border: 3px solid #333;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  transition: all .35s;
-  position: relative;
-  z-index: 2;
-}
+
 .button2:hover {
-     background-color: #093f0b;
+    background-color: rgb(63, 40, 148);
     border: none;
-    color:whitesmoke;
-    padding: 20px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-    margin: 3px 1px;
-    cursor:default;
-    
+    color: whitesmoke;
 
-
-   
- 
-   
 }
+.button:hover {
+    background-color: rgb(63, 40, 148);
+    border: none;
+    color: whitesmoke;
+
+}
+
+
+#logo {
+    height: 290px;
+    margin-left: 38%;
+}  
+
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

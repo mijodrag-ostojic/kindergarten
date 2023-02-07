@@ -1,41 +1,58 @@
-<div>
-    <div class="body">
-        <div class="forma">
-            <div id="register">
-                 <br><label> Ime </label><br>
-                 <input type="text" [(ngModel)]="model.ime" name="ime">
+<div class="example-container">
 
-                 <br> <label> Prezime </label><br>
-                 <input type="text" [(ngModel)]="model.prezime" name="prezime">
+    <mat-form-field appearance="fill">
+        <mat-label>Unesite svoje ime;</mat-label>
+        <input matInput placeholder="Petar" [(ngModel)]="ime" required>
+    </mat-form-field>
 
-                 <br> <label><b>Datum rodjenja</b></label><br>
-                 <input type="date" [(ngModel)]="model.datumRodjenja" name="Datum">
+    <mat-form-field appearance="fill">
+        <mat-label>Unesite svoje prezime</mat-label>
+        <input matInput placeholder="Petrovic" [(ngModel)]="prezime" required>
+    </mat-form-field>
 
-                 <br><label>Pol</label><br>
-                 <div *ngFor="let pol of polovi">
-                    <input type="radio" name="pol" [(ngModel)]="model.pol" [value]="pol"> {{pol}}
-                 </div>
-                 <br> <label><b>Korisnicko Ime</b></label><br>
-                 <input type="text" [(ngModel)]="model.korisnickoIme" name="Korsnik">
+    <mat-form-field appearance="fill">
+        <mat-label>Unesite svoje korisnicko ime</mat-label>
+        <input matInput placeholder="petar123" [(ngModel)]="korisnickoIme" required>
+    </mat-form-field>
 
-                 <br> <label><b>E-mail </b></label><br>
-                 <input type="email" [(ngModel)]="model.email" name="email">
+    <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" [(ngModel)]="email" required>
+    </mat-form-field>
 
-                 <br> <label><b>Unesi lozinku</b></label><br>
-                 <input type="password" [(ngModel)]="model.lozinka" name="lozinka">
+    <!--   
+        <mat-label>Izaberite datum rodjena</mat-label>      
+ 
+        <input matInput [matDatepicker]="picker2" [(ngModel)]="datumRodjenja">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+-->
+    <div class="example-container">
 
-                 <br> <label><b>Ponovi lozinku</b></label><br>
-                 <input type="password" [(ngModel)]="model.lozinka2" name="lozinka2">
+        <mat-form-field appearance="fill">
+            <mat-label>Unesite Lozinku</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+        </mat-form-field>
 
-                 <div *ngFor="let cookie of model.cookies">
-                    <input type="checkbox" [(ngModel)]="cookie.selected"> {{cookie.name}}
-                 </div>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
 
+        <mat-form-field appearance="fill">
+            <mat-label>Ponovo ukucajte Lozinku</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'">
+        </mat-form-field>
 
-                 <br><a routerLink="/login"> <input type="button" value="Registruj se" (click)="print()"></a>
-               
-            </div>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+
+        <div *ngFor="let op of opcije">
+            <input type="radio" name="pol"> {{op}}
         </div>
-    <div>
+        
+    </div>
 </div>
- {{model | json}}

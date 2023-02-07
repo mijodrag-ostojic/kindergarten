@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { User } from '../model/user';
+import { Account } from '../model/account';
 
 @Component({
   selector: 'app-login',
@@ -8,24 +7,27 @@ import { User } from '../model/user';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
-  username = 'tijana'
-  password = 'tpass'
 
-
-  model = new User(undefined, undefined)
-  constructor() {
+  model : Account = {
+    ime: '',
+    prezime: '',
+    datumRodjenja: new Date,
+    korisnickoIme: '',
+    email: '',
+    lozinka: '',
+    lozinka2: '',
+    pol: '',
+    cookies: []
   }
+
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  submit() {
-    console.log('username');  
-  }
-
-  setUsername(username:string){
-    this.username = username;
+  print() {
+    console.log('Korisnik se registrovao!');
+    console.log(this.model);
   }
 
 }

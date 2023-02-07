@@ -7,5 +7,5 @@ export interface Grupa  {
     opis : string
     pocetakRada : Date
     pocetakUpisa : Date
-    price: number
+    
 }

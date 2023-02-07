@@ -12,39 +12,20 @@ export class GrupeComponent implements OnInit {
 
   grupe : Array<Grupa> = [
     {
-      imeGrupe : "Speak up",
-      tipGrupe : TipGrupe.JASLICE,
-      opis : 'Grupa namenjena najmladjim malisanima koji jos nisu progovorili. ',
+      imeGrupe : "Predškolci",
+      tipGrupe : TipGrupe.PREDSKOLSKO,
+      opis : 'Grupa namenjena deci od peti i po do šest i po godina. ',
       pocetakRada : new Date(),
-      pocetakUpisa : new Date(),
-      price : 50
+      pocetakUpisa : new Date(),  
     },
     {
-      imeGrupe : "Juniors",
-      tipGrupe : TipGrupe.JUNIOR,
-      opis : 'Grupa namenjena malisanima od 2 do 3 godine. ',
+      imeGrupe : "Osnovci",
+      tipGrupe : TipGrupe.OSNOVCI,
+      opis : 'Grupa namenjena deci od I do IV razreda. ',
       pocetakRada : new Date(),
       pocetakUpisa : new Date(),
-      price : 70
     },
     
-    {
-      imeGrupe : "Seniori",
-      tipGrupe : TipGrupe.PREDSKOLSKO,
-      opis : 'Grupa namenjena . ',
-      pocetakRada : new Date(),
-      pocetakUpisa : new Date(),
-      price : 90
-    },
-    
-    {
-      imeGrupe : "Maturanti",
-      tipGrupe : TipGrupe.PREDSKOLSKO,
-      opis : 'Grupa namenjena deci koja polaze u 1. razred. ',
-      pocetakRada : new Date(),
-      pocetakUpisa : new Date(),
-      price : 100
-    },
   ]
 
   constructor() { }
